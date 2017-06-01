@@ -81,7 +81,7 @@ Upload these 3 files to the [`editors`](editors/) folder.
 
 What terminal editor will be your preferred choice of use? How did you make your decision?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> I will be using emacs since I am a little more familiar with using it compared to vim or nano. I don't really have a strong preference, however.
 
 --
 
@@ -89,6 +89,6 @@ What terminal editor will be your preferred choice of use? How did you make your
 
 What graphical editor will you use? How did you make your decision? What are some interesting features of your editor? What are some useful keyboard shortcuts for your editor? How do you customize your editor?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> I will be using spyder since I have used it a lot in the past. I like being able to test code in a terminal before moving it into a script after I have made sure it works. Some useful shortcuts are Ctrl-4 and Ctrl-5 to add and remove block comments for debugging. I have not really felt the need to customize the editor much beyond the defaults.
 
  
