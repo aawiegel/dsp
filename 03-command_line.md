@@ -19,10 +19,27 @@ Here's a list of items with which you should be familiar:
 
 Make a cheat sheet for yourself: a list of at least **ten** commands and what they do.  (Use the 8 items above and add a couple of your own.)  
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
-
+> > ### pwd
+> > Show the current working directory.
+> > ### mkdir (-p)
+> > Create a new directory. Use the -p option to create multiple subdirectories at the same time.
+> > ### rmdir
+> > Remove a directory. This only works if the directory is empty.
+> > ### touch
+> > Create a new, empty file.
+> > ### rm (-rf)
+> > Remove a file. Use the option -rf to remove a directory and its files recursively.
+> > ### mv filepath1 filepath2
+> > Moves or renames a file from filepath1 to filepath2
+> > ### ls (-a)
+> > List files in a directory. The -a option shows all files, including hidden files. See below for more options.
+> > ### cp filepath1 filepath2
+> > Copy files from filepath1 to filepath2.
+> > ### man command
+> > Displays the help information/manual for a program.
+> > ### less textfile
+> > Displays first few lines of a text file and allows scrolling through.
 ---
-
 ### Q2.  List Files in Unix   
 
 What do the following commands do:  
@@ -34,7 +51,20 @@ What do the following commands do:
 `ls -t`  
 `ls -Glp`  
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+> > ### ls
+> > List files in a directory.
+> > ### ls -a
+> > List all files in a directory, including hidden files
+> > ### ls -l
+> > List the detailed information in a directory, including permissions, date created, etc.
+> > ### ls -lh
+> > List the detailed information in a directory with human readable byte sizes for files.
+> > ### ls -lah
+> > List all the detailed information in a directory, including hidden files.
+> > ### ls -t
+> > List all the files in order of time created.
+> > ### ls -Glp
+> > List the detailed information in a directory without group information and with slashes at the end of directories.
 
 ---
 
@@ -42,7 +72,16 @@ What do the following commands do:
 
 Explore these other [ls options](http://www.techonthenet.com/unix/basic/ls.php) and pick 5 of your favorites:
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+> > ### ls -m
+> > List all files as a comma-separated list.
+> > ### ls -ld
+> > Display detailed information about the current directory.
+> > ### ls -R
+> > List all files in the current directory and each subdirectory.
+> > ### ls -1
+> > List all files with only one entry per line
+> > ### ls *.[format]
+> > List all files in the directory of the given file extension.
 
 ---
 
@@ -50,7 +89,10 @@ Explore these other [ls options](http://www.techonthenet.com/unix/basic/ls.php) 
 
 What does `xargs` do? Give an example of how to use it.
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+> > xargs allows passing long argument lists to commands that have a limit on the number of arguments. For example, if you wanted to remove all files in the current directory that had the extension "txt", you would use the following command:
+```console
+find . -name "*.txt" -type f -print | xargs /bin/rm -f
+```
 
  
 
