@@ -12,7 +12,7 @@ For quick and easy interactive practice with Python, many people enjoy [Codecade
 
 How are Python lists and tuples similar and different? Which will work as keys in dictionaries? Why?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> Both lists and tuples are sequences of data, such as strings, integers, etc. The main difference is that lists are mutable (i.e., they can be changed) while tuples are immutable (i.e., they cannot be changed.) Only tuples can be used as keys in a dictionary to avoid modifying the key in such a way that the connection between the key-value pairs gets lost or multiple keys refer to the same value.
 
 ---
 
@@ -20,7 +20,7 @@ How are Python lists and tuples similar and different? Which will work as keys i
 
 How are Python lists and sets similar and different? Give examples of using both. How does performance compare between lists and sets for finding an element. Why?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> Both lists and sets are types of sequences. However, sets contain each unique element in the sequence while lists can contain multiple copies of the same value. Finding an element in a set is faster because a set finds a value by computing a hash from it instead of finding it manually. 
 
 ---
 
@@ -28,7 +28,16 @@ How are Python lists and sets similar and different? Give examples of using both
 
 Describe Python's `lambda`. What is it, and what is it used for? Give at least one example, including an example of using a `lambda` in the `key` argument to `sorted`.
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> Lambda is used to define anonymous functions where a simple, single line function is needed as an argument to another function. For example, lambda could be used in the built-in function "sorted()" to sort by a particular entry in a list of tuples.
+
+```python
+# List of tuples of employee names, their department, and recent performance score
+employees = [('Bob', 'Marketing', 6), ('Alice', 'Sales', 7), ('Charles', 'R&D', 2)]
+
+# Sort employees by their performance score
+sorted(employees, key=lambda employee: employee[2])
+
+```
 
 ---
 
