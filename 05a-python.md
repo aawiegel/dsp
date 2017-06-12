@@ -45,11 +45,7 @@ sorted(employees, key=lambda employee: employee[2])
 
 Explain list comprehensions. Give examples and show equivalents with `map` and `filter`. How do their capabilities compare? Also demonstrate set comprehensions and dictionary comprehensions.
 
->> List comprehensions are notation for generating a list from a one line for loop. For example, to generate a list of even numbers from 2 to 8, the following code could be used:
-
-```python
-x = [2*s for s in range(1, 5)]
-```
+>> REPLACE THIS TEXT WITH YOUR RESPONSE
 
 ---
 
@@ -64,7 +60,7 @@ date_start = '01-02-2013'
 date_stop = '07-28-2015'
 ```
 
->> 937 days
+>> REPLACE THIS TEXT WITH YOUR RESPONSE (answer will be in number of days)
 
 b.  
 ```
@@ -72,7 +68,7 @@ date_start = '12312013'
 date_stop = '05282015'  
 ```
 
->> 513 days
+>> REPLACE THIS TEXT WITH YOUR RESPONSE (answer will be in number of days)
 
 c.  
 ```
@@ -80,7 +76,7 @@ date_start = '15-Jan-1994'
 date_stop = '14-Jul-2015'  
 ```
 
->> 7850 days
+>> REPLACE THIS TEXT WITH YOUR RESPONSE  (answer will be in number of days)
 
 Place code in this file: [q5_datetime.py](python/q5_datetime.py)
 
