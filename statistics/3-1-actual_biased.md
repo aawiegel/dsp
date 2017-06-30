@@ -18,8 +18,10 @@ child_dist.Mean()
 # Plot a histogram of the data
 thinkplot.Hist(child_dist)
 thinkplot.Config(xlabel="Number of children", ylabel="PMF")
+```
+![child distribution](child_dist.png)
 
-
+```python
 # Copy the data to create a biased distribution
 biased_child_dist = child_dist.Copy()
 
@@ -36,5 +38,7 @@ biased_child_dist.Mean()
 thinkplot.Hist(biased_child_dist)
 thinkplot.Config(xlabel="Number of children", ylabel="biased PMF")
 ```
+
+![biased dist](child_biased_dist.png)
 
 >> The original distribution had a mean of 1.02, while the child-biased distribution had a mean of 2.89. Slightly less than half of families had 0 children so finding the distribution based on the observations of the child would skew the mean high.
