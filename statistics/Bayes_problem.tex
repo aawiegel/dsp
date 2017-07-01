@@ -1,0 +1,24 @@
+\documentclass{article}
+
+\usepackage{amsmath}
+
+\begin{document}
+	Let 
+	\[
+		P(I) = \frac{1}{300},
+		P(F) = \frac{1}{125},
+	\]
+	where $P(I)$ is the probability of being an identical twin, and $P(F)$ is the probability of being a fraternal twin. We want to find the probability that Elvis is an identical twin, given that he is some type of twin. We can express this as the conditional probability $P(I|I \text{ or } F)$, which is the probability that a twin is identical given that they're either a fraternal or identical twin. Using Bayes' rule, we can calculate this probability as follows:
+	\[
+		P(I|I \text{ or } F) = \frac{P(I)P(I \text{ or } F|I)}{P(I \text{ or } F)}
+	\]
+	From here, we can use that it is not possible for a twin to be both fraternal and identical by definition. In other words, the probability of being a fraternal and identical twin is disjoint, and therefore,
+	\[
+		P(I \text{ or } F) = P(I) + P(F).
+	\]
+	Furthermore, the probability $P(I \text{ or } F|I)$ that a person is a fraternal or identical twin given that they're an identical twin is exactly one. Using both of these, we obtain the following:
+	\[
+		P(I|I \text{ or } F) = \frac{P(I)}{P(I) + P(F)}
+	\]
+	By substituting in the values for $P(I)$ and $P(F)$, we obtain that the probability Elvis is an identical twin is $\frac{5}{17}$.
+\end{document}
